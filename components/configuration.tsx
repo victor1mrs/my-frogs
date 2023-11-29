@@ -10,47 +10,45 @@ import { Button } from "@/components/ui/button"
 
 export function Configuration() {
   return (
-    <Card className="bg-[#f2f2f2] h-full w-full p-6 rounded-lg shadow-lg text-center">
+    <Card className="bg-[#f2f2f2] h-full w-1/2 p-6 rounded-lg shadow-lg text-center">
       <CardHeader>
-        <CardTitle className="text-6xl text-[#D91966]">Configuracion</CardTitle>
-        <CardDescription className="text-5xl">Notificaciones por mail</CardDescription>
+        <CardTitle className="text-2xl text-[#D91966]">Configuracion</CardTitle>
+        <CardDescription className="text-xl">Notificaciones por mail</CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4">
-        <div className="flex justify-center items-center space-x-4">
-          <Switch className="bg-[#D91966]" id="all" />
+      <CardContent className="space-y-4 px-32">
+        <div className="flex p-4 space-x-4">
+          <Switch id="all" />
           <Label className="text-center" htmlFor="all">
             Activar/Desactivar todas
           </Label>
         </div>
-        <div className="bg-[#fefefe] p-6 rounded-lg space-y-6 mx-auto w-1/2">
+        <div className="bg-[#fefefe] p-4 rounded-lg space-y-6">
           <div className="flex justify-start items-center space-x-4">
-            <Switch className="bg-[#D91966]" id="option1" />
+            <Switch id="option1"  />
             <Label className="text-center" htmlFor="option1">
-              Option 1
+              Inscripción pendiente
             </Label>
           </div>
           <div className="flex justify-start items-center space-x-4">
-            <Switch className="bg-[#D91966]" id="option2" />
+            <Switch id="option2" />
             <Label className="text-center" htmlFor="option2">
-              Option 2
+              Recordar review
             </Label>
           </div>
           <div className="flex justify-start items-center space-x-4">
-            <Switch className="bg-[#D91966]" id="option3" />
+            <Switch id="option3" />
             <Label className="text-center" htmlFor="option3">
-              Option 3
+              Cierre de menú
             </Label>
           </div>
         </div>
         <div className="space-y-2">
-          <Label htmlFor="currentPassword">Current Password</Label>
-          <Input id="currentPassword" required type="password" />
+          <Input id="currentPassword" required type="password" placeholder="Contraseña"/>
         </div>
         <div className="space-y-2">
-          <Label htmlFor="newPassword">New Password</Label>
-          <Input id="newPassword" required type="password" />
+          <Input id="newPassword" required type="password" placeholder="Confirmar contraseña"/>
         </div>
-        <Button className="w-full">Confirm</Button>
+        <Button className="w-1/2 bg-[#D91966] text-gray-50">Guardar Cambios</Button>
       </CardContent>
     </Card>
   )

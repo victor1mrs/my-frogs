@@ -1,7 +1,7 @@
 import { Configuration } from "@/components/configuration"
 const SettingsPage = () => {
   return (
-    <div>
+    <div className='flex justify-center'>
       <Configuration />
     </div>
   )
