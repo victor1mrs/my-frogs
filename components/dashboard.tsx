@@ -17,9 +17,9 @@ const Dashboard = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col h-screen bg-[#D91966] dark:bg-[#333132]">
       <header className="flex justify-center items-center h-16 px-6 bg-[#D91966] dark:bg-[#333132]">
-        <div className="text-2xl font-bold text-white dark:text-gray-200">
+        <Link className="text-2xl font-bold text-white dark:text-gray-200" href="/">
           Frog&lsquo;s
-        </div>
+        </Link>
         <Button
           className="absolute right-6 text-white dark:text-gray-200 bg-transparent dark:bg-transparent hover:bg-transparent border-0 hover:text-gray-500"
           variant="outline"
