@@ -30,7 +30,7 @@ const Dashboard = ({ children }: { children: React.ReactNode }) => {
       <div className="flex flex-1 overflow-hidden">
         <nav className="flex flex-col items-start justify-between p-6 space-y-1 bg-[#333132] text-white dark:text-gray-200">
           <div className="space-y-2">
-            <Link className="flex items-center gap-2" href="#">
+            <Link className="flex items-center gap-2" href="/menu">
               <IconLunch className="h-5 w-5" />
               <span>Menu</span>
             </Link>
