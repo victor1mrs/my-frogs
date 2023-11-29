@@ -38,7 +38,7 @@ const Dashboard = ({ children }: { children: React.ReactNode }) => {
               <IconHistory className="h-5 w-5" />
               <span>Historial</span>
             </Link>
-            <Link className="flex items-center gap-2" href="#">
+            <Link className="flex items-center gap-2" href="settings">
               <IconSettings className="h-5 w-5" />
               <span>Configuración</span>
             </Link>
